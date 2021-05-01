@@ -14,4 +14,8 @@ int Rectangle::area() {
 
 int Rectangle:perimeter() {
     return (2 * this->width) + (2 * this->height);
+
+Rectangle::Rectangle(int w, int h) {
+	this->width = w;
+	this->height = h;
 }
