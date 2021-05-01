@@ -1,5 +1,10 @@
 #include "../header/rectangle.hpp"
 
+Rectangle::Rectangle(int w, int h) {
+        this->width = w;
+        this->height = h;
+}
+
 void Rectangle::set_width(int w) {
     this->width = w;
 }
@@ -12,10 +17,6 @@ int Rectangle::area() {
     return this->width * this->height;
 }
 
-int Rectangle:perimeter() {
+int Rectangle::perimeter() {
     return (2 * this->width) + (2 * this->height);
-
-Rectangle::Rectangle(int w, int h) {
-	this->width = w;
-	this->height = h;
 }
