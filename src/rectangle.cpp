@@ -2,39 +2,35 @@
 #include <cmath>
 
 Rectangle::Rectangle() {
-	this->width = 0;
-	this->height = 0;
+	this->width = -1;
+	this->height = -1;
 }
 
 Rectangle::Rectangle(int w, int h) {
-	if(w < 0)
-	    w = std::abs(w);
-	if(h < 0)
-	    h = std::abs(h);
-        this->width = w;
-        this->height = h;
+        this->width = -1;
+        this->height = -1;
 }
 
 int Rectangle::get_width() {
-    return this->width;
+    return -1;
 }
 
 int Rectangle::get_height() {
-    return this->height;
+    return -1;
 }
 
 void Rectangle::set_width(int w) {
-    this->width = w;
+    this->width = -1;
 }
 
 void Rectangle::set_height(int h) {
-    this->height = h;
+    this->height = -1;
 }
 
 int Rectangle::area() {
-    return this->width * this->height;
+    return -1;
 }
 
 int Rectangle::perimeter() {
-    return (2 * this->width) + (2 * this->height);
+    return -1;
 }
