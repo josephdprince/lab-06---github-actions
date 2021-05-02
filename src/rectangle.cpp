@@ -1,4 +1,5 @@
 #include "../header/rectangle.hpp"
+#include <cmath>
 
 Rectangle::Rectangle() {
 	this->width = 0;
@@ -6,6 +7,10 @@ Rectangle::Rectangle() {
 }
 
 Rectangle::Rectangle(int w, int h) {
+	if(w < 0)
+	    w = std::abs(w);
+	if(h < 0)
+	    h = std::abs(h);
         this->width = w;
         this->height = h;
 }
