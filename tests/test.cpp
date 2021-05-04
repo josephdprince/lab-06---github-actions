@@ -59,5 +59,10 @@ TEST(Perimeter, TwoNegInputPerimeter) {
 	EXPECT_EQ(test->perimeter(), 16);
 }
 
+int main(int argc, char **argv) {
+  ::testing::InitGoogleTest(&argc, argv);
+  return RUN_ALL_TESTS();
+}
+
 
 #endif
