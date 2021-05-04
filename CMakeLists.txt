@@ -4,7 +4,7 @@ project(ProjectName)
 
 SET(CMAKE_CXX_STANDARD 11)
 
-ADD_SUBDIRECTORY(googletest_@_f5e592d)
+ADD_SUBDIRECTORY(googletest)
 
 ADD_EXECUTABLE(test tests/test.cpp)
 
