@@ -1,7 +1,7 @@
 #ifndef __TEST_CPP__
 #define __TEST_CPP__
 
-#include "../header/rectangle.hpp"
+#include "../src/rectangle.cpp"
 #include "gtest/gtest.h"
 
 TEST(Constructor, defaultConstructor) {
