@@ -1,7 +1,7 @@
 #ifndef __TEST_CPP__
 #define __TEST_CPP__
 
-#include "../header/rectangle.hpp"
+#include "../src/rectangle.cpp"
 #include "gtest/gtest.h"
 
 TEST(Constructor, defaultConstructor) {
@@ -59,5 +59,9 @@ TEST(Perimeter, TwoNegInputPerimeter) {
 	EXPECT_EQ(test->perimeter(), 16);
 }
 
+int main(int argc, char **argv) {
+  ::testing::InitGoogleTest(&argc, argv);
+  return RUN_ALL_TESTS();
+}
 
 #endif

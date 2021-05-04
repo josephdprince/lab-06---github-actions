@@ -6,7 +6,7 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main, pkati001/ci_setup ]
+    branches: [ main, pkati001/failing_tests, jprin012/passing_tests ]
   pull_request:
     branches: [ main ]
 
@@ -24,7 +24,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-        submodules: true
+        with:
+          submodules: recursive
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
