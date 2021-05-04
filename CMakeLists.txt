@@ -1,8 +1,10 @@
 cmake_minimum_required(VERSION 3.17)
 
+project(ProjectName)
+
 SET(CMAKE_CXX_STANDARD 11)
 
-ADD_SUBDIRECTORY(googletest)
+ADD_SUBDIRECTORY(googletest_@_f5e592d)
 
 ADD_EXECUTABLE(test tests/test.cpp)
 
